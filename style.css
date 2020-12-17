@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 12px;
+    font-family: "Andika New Basic", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#master{
+    background-image: url("img/hero-bg.png");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#master::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#master h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: aliceblue;
+    font-size: 4rem;
+    color: darkred;
+    z-index: 1;
+}
+#master h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: cornflowerblue;
+    animation: text_reveal 1s reverse infinite;
+    animation-delay: .1s;
+    z-index: -2;
+}
+
+#master .cta{
+    display: inline-block;
+    padding: 15px 30px;
+    color: wheat;
+    background-color: transparent;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+    transition-property: background-color, color;
+}
+
+#master .cta:hover{
+    color: aliceblue;
+    background-color: crimson;
+}
+
+@keyframes text_reveal {
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+
+}
