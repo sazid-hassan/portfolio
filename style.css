@@ -15,7 +15,7 @@ a{
 }
 
 .container {
-    min-height: 100vmax;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -48,8 +48,6 @@ a{
     font-size: 4rem;
     position: relative;
     color: aliceblue;
-    font-size: 4rem;
-    color: darkred;
     z-index: 1;
 }
 
@@ -100,4 +98,24 @@ a{
         left: 100%;
     }
 
+}
+
+#second{}
+
+#second .second{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#second .section-title{
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1rem;
 }
