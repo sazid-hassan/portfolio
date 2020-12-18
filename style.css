@@ -15,7 +15,7 @@ a{
 }
 
 .container {
-    min-height: 100vh;
+    min-height: 145vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -118,4 +118,36 @@ a{
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: .1rem;
+}
+
+#second .section-title span{
+    color: darkred;
+}
+
+#second .second-top p{
+    font-size: 1.5rem;
+    line-height: 2.5px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+#second .second-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#second .serv-items{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-image: url("img/img-1.jpg");
+    background-size: auto;
+    margin-bottom: 10px;
+    margin-right: 30%;
+    margin-left: 20%;
 }
