@@ -5,7 +5,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 html{
     font-size: 12px;
     font-family: "Andika New Basic", sans-serif;
@@ -16,7 +15,7 @@ a{
 }
 
 .container {
-    min-height: 100vh;
+    min-height: 100vmax;
     width: 100%;
     display: flex;
     align-items: center;
@@ -53,6 +52,14 @@ a{
     color: darkred;
     z-index: 1;
 }
+
+#master .master{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
 #master h1 span{
     position: absolute;
     top: 0;
@@ -60,15 +67,15 @@ a{
     height: 100%;
     width: 100%;
     background-color: cornflowerblue;
-    animation: text_reveal 1s reverse infinite;
-    animation-delay: .1s;
+    animation: text_reveal 1.5s reverse;
+    animation-delay: 1.5s;
     z-index: -2;
 }
 
 #master .cta{
     display: inline-block;
     padding: 15px 30px;
-    color: wheat;
+    color: chocolate;
     background-color: transparent;
     font-size: 3rem;
     text-transform: uppercase;
@@ -80,7 +87,7 @@ a{
 
 #master .cta:hover{
     color: aliceblue;
-    background-color: crimson;
+    background-color: greenyellow;
 }
 
 @keyframes text_reveal {
